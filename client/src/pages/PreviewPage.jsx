@@ -21,7 +21,7 @@ const PreviewPage = () => {
 
   useEffect(() => {
 
-        // Wait until authentication check is finished
+        // Wait until authentication check is finish
         if (loadingUser) return;
         if (!id) return;
         loadProject(id);

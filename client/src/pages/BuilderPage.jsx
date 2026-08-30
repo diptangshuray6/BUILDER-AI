@@ -8,8 +8,10 @@ import ChatPanel from '../components/chatPanel';
 import FileExplorer from '../components/FileExplorer';
 import PreviewPanel from '../components/PreviewPanel';
 import AgentProgressDashboard from '../components/AgentProgressDashboard';
-import PublishModal from '../components/PublishModel';
+import PublishModel from '../components/PublishModel';
 import { exportProjectZip } from '../utils/exportProject';
+import toast from 'react-hot-toast';
+import api from '../api/api';
 
 
 const BuilderPage = () => {
@@ -148,7 +150,7 @@ return (
              }
         </div>
           </div>
-             {publishUrl && <PublishModal publishUrl={publishUrl}
+             {publishUrl && <PublishModel publishUrl={publishUrl}
              onClose={() => setPublishUrl(null)}/>}
           </div>
         )

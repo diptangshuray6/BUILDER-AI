@@ -2,7 +2,7 @@ import { XIcon } from 'lucide-react';
 import React from 'react';
 import toast from 'react-hot-toast';
 
-const PublishModal = ({ publishUrl, onClose }) => {
+const PublishModel = ({ publishUrl, onClose }) => {
     const handleCopyLink = () => {
         if (!publishUrl) return;
 
@@ -62,4 +62,4 @@ const PublishModal = ({ publishUrl, onClose }) => {
     )
 }
 
-export default PublishModal;
+export default PublishModel;

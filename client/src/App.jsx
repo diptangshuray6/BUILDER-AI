@@ -24,11 +24,12 @@ const App = () => {
       <Route element={<AuthLayout />}>
         <Route path="/" element={<HomePage />} />
         <Route path="/builder/:id" element={<BuilderPage />} />
-        <Route path="/preview/:id" element={<PreviewPage />} />
+        {/* <Route path='/preview/:id' element={<PreviewPage />} /> */}
       </Route>
 
       {/* Public Routes */}
-      <Route path='/publich/:id' element={<PublishPage />} />
+      <Route path='/publish/:id' element={<PublishPage />} />
+      <Route path="/preview/:id" element={<PreviewPage />} />
 
       {/* Catch-all */}
       <Route path="*" element={<Navigate to="/" replace />} />

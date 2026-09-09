@@ -4,7 +4,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import BuilderHeader from '../components/BuilderHeader';
 import Loading from '../components/Loading';
 import { FolderTreeIcon, MessageSquareIcon } from 'lucide-react';
-import ChatPanel from '../components/chatPanel';
+import ChatPanel from '../components/ChatPanel';
 import FileExplorer from '../components/FileExplorer';
 import PreviewPanel from '../components/PreviewPanel';
 import AgentProgressDashboard from '../components/AgentProgressDashboard';
